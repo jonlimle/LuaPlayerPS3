@@ -53,8 +53,8 @@ clean:
 
 install:
 	@echo Install...
-	@cp $(OUTPUT).a /usr/local/ps3dev/psl1ght/lib
-	@cp $(LUA_HEADERS) /usr/local/ps3dev/psl1ght/include
+	@cp $(OUTPUT).a $(PSL1GHT)/lib
+	@cp $(LUA_HEADERS) $(PSL1GHT)/include
 
 else
 
