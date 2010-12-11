@@ -16,6 +16,7 @@ TITLE		:=	LuaPlayer for PS3
 APPID		:=	LUAP0PS31
 CONTENTID	:=	UP0001-$(APPID)_00-0000000000000000
 ICON0 		:= 	ICON0.PNG
+PIC1		:=	PIC1.PNG
 
 CFLAGS		+= -g -O2 -Wall --std=gnu99
 CXXFLAGS	+= -g -O2 -Wall
@@ -56,7 +57,7 @@ pkg: $(BUILD)
 	@echo Creating PKG...
 	@mkdir -p $(BUILD)/pkg
 	@mkdir -p $(BUILD)/pkg/USRDIR
-	@cp $(ICON0) $(BUILD)/pkg/
+	@cp $(ICON0) $(PIC1) $(BUILD)/pkg/
 	@$(FSELF) -n $(BUILD)/$(TARGET).elf $(BUILD)/pkg/USRDIR/EBOOT.BIN
 	@$(SFO) --title "$(TITLE)" --appid "$(APPID)" -f $(SFOXML) $(BUILD)/pkg/PARAM.SFO
 	@$(PKG) --contentid $(CONTENTID) $(BUILD)/pkg/ $(OUTPUT).pkg
