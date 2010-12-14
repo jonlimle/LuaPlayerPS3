@@ -39,7 +39,8 @@ LUALIB_API int (luaopen_package) (lua_State *L);
 #define LUA_PADLIBNAME	"pad"
 LUALIB_API int (luaopen_pad) (lua_State *L);
 
-
+LUALIB_API int (luaopen_SDL) (lua_State *L);
+LUALIB_API int (luaopen_sock)(lua_State *L);
 /* open all previous libraries */
 LUALIB_API void (luaL_openlibs) (lua_State *L); 
 

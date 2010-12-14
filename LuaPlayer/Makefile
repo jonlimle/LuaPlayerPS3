@@ -10,7 +10,7 @@ BUILD		:=	build
 SOURCE		:=	source
 INCLUDE		:=	include
 DATA		:=	data
-LIBS		:=	-llua -lgcm_sys -lreality -lsysutil -lio -lm -lsysmodule 
+LIBS		:=	-llua -lSDL -lpng -ljpeg -lgcm_sys -lreality -lsysutil -lio -lm -lsysmodule -lnet -lstdc++ -lz
 
 TITLE		:=	LuaPlayer for PS3
 APPID		:=	LUAP0PS31

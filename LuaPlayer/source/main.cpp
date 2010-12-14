@@ -1,6 +1,4 @@
-#include <lua.h>
-#include <lualib.h>
-#include <lauxlib.h>
+#include <lua.hpp>
 
 #include <psl1ght/lv2.h>
 
@@ -11,7 +9,7 @@
 #include <unistd.h>
 
 #include <sysmodule/sysmodule.h>
-
+extern int luaopen_sock(lua_State *L);
 int main (int argc, char* argv[])
 {
     SysLoadModule(SYSMODULE_FS);
